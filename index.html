@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .color {
+        background-color: #0093e9;
+        background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+      }
+      .footer {
+        background-color: #d9afd9;
+        background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
+      }
+      body{
+        overflow-x: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg color sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand ms-4 pe-5" href="#">Dummy Shop</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <form class="d-flex mx-auto w-50" role="search">
+            <input
+              class="form-control me-2 font-monospace"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+
+          <ul class="nav navbar-nav justify-content-end me-4">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="true"
+              >
+                Sign In
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Create an Account</a></li>
+                <li><a class="dropdown-item" href="#">Sign In</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Careers</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border shadow">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav d-flex justify-content-evenly w-100">
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="#">Home and Kitchen</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="#">Best Sellers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="#">Today's Deals</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="#">Mobiles</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="#">Customer Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="#">Electronics</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="#">Sell</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="#">New Releases</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="#">All Deals</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container d-flex justify-content-center">
+      <div class="row shadow my-3 px-5 w-100 py-3">
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-3">
+          <div class="dropdown">
+            <img
+              src="./images/electronics.jpg"
+              class="img-fluid dropdown-toggle"
+              style="
+                height: 100px;
+                width: 150px;
+                object-fit: scale-down;
+                cursor: pointer;
+              "
+              id="dropdownMenuElectronics"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              alt="Electronics"
+            />
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuElectronics">
+              <li><a class="dropdown-item" href="#">Hard Drives</a></li>
+              <li><a class="dropdown-item" href="#">Laptops</a></li>
+              <li><a class="dropdown-item" href="#">Cameras</a></li>
+            </ul>
+            <h6
+              class="mt-2 dropdown-toggle"
+              data-bs-toggle="dropdown"
+              aria-expanded="true"
+              aria-labelledby="dropdownMenuElectronics"
+              style="cursor: pointer"
+            >
+              Electronics
+            </h6>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-3">
+          <div class="dropdown">
+            <img
+              src="./images/mobile.jpg"
+              class="img-fluid dropdown-toggle"
+              style="
+                height: 100px;
+                width: 150px;
+                object-fit: scale-down;
+                cursor: pointer;
+              "
+              id="dropdownMenuMobiles"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              alt="Mobiles"
+            />
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuMobiles">
+              <li><a class="dropdown-item" href="#">Smartphones</a></li>
+              <li><a class="dropdown-item" href="#">Tablets</a></li>
+              <li><a class="dropdown-item" href="#">Accessories</a></li>
+            </ul>
+            <h6
+              class="mt-2 dropdown-toggle"
+              data-bs-toggle="dropdown"
+              aria-expanded="true"
+              aria-labelledby="dropdownMenuMobiles"
+              style="cursor: pointer"
+            >
+              Mobiles
+            </h6>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-3">
+          <div class="dropdown">
+            <img
+              src="./images/clothes.jpg"
+              class="img-fluid dropdown-toggle"
+              style="
+                height: 100px;
+                width: 150px;
+                object-fit: scale-down;
+                cursor: pointer;
+              "
+              id="dropdownMenuMobiles"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              alt="Mobiles"
+            />
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuClothes">
+              <li><a class="dropdown-item" href="#">Men's Wear</a></li>
+              <li><a class="dropdown-item" href="#">Children's Wear</a></li>
+              <li><a class="dropdown-item" href="#">Trending</a></li>
+            </ul>
+            <h6
+              class="mt-2 dropdown-toggle"
+              data-bs-toggle="dropdown"
+              aria-expanded="true"
+              aria-labelledby="dropdownMenuClothes"
+              style="cursor: pointer"
+            >
+              Clothes
+            </h6>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-3">
+          <div class="dropdown">
+            <img
+              src="./images/furniture.jpg"
+              class="img-fluid dropdown-toggle"
+              style="
+                height: 100px;
+                width: 150px;
+                object-fit: scale-down;
+                cursor: pointer;
+              "
+              id="dropdownMenuMobiles"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              alt="Mobiles"
+            />
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuFurnitures">
+              <li><a class="dropdown-item" href="#">Sofas</a></li>
+              <li><a class="dropdown-item" href="#">Tables</a></li>
+              <li><a class="dropdown-item" href="#">Chairs</a></li>
+            </ul>
+            <h6
+              class="mt-2 dropdown-toggle"
+              data-bs-toggle="dropdown"
+              aria-expanded="true"
+              aria-labelledby="dropdownMenuFurnitures"
+              style="cursor: pointer"
+            >
+              Furnitures
+            </h6>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-3">
+          <div class="dropdown">
+            <img
+              src="./images/laptop.jpg"
+              class="img-fluid dropdown-toggle"
+              style="
+                height: 100px;
+                width: 150px;
+                object-fit: scale-down;
+                cursor: pointer;
+              "
+              id="dropdownMenuMobiles"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              alt="Mobiles"
+            />
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLaptops">
+              <li><a class="dropdown-item" href="#">Gaming Laptops</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Light Weight Laptops</a>
+              </li>
+              <li><a class="dropdown-item" href="#">Budget Laptops</a></li>
+            </ul>
+            <h6
+              class="mt-2 dropdown-toggle"
+              data-bs-toggle="dropdown"
+              aria-expanded="true"
+              aria-labelledby="dropdownMenuLaptops"
+              style="cursor: pointer"
+            >
+              Laptops
+            </h6>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-3">
+          <div class="dropdown">
+            <img
+              src="./images/Kitchen.jpg"
+              class="img-fluid dropdown-toggle"
+              style="
+                height: 100px;
+                width: 150px;
+                object-fit: scale-down;
+                cursor: pointer;
+              "
+              id="dropdownMenuMobiles"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              alt="Home and Kitchen"
+            />
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuMobiles">
+              <li><a class="dropdown-item" href="#">Juicer Mixers</a></li>
+              <li><a class="dropdown-item" href="#">Gas Stoves</a></li>
+              <li><a class="dropdown-item" href="#">Microwave Oven</a></li>
+            </ul>
+            <h6
+              class="mt-2 dropdown-toggle"
+              data-bs-toggle="dropdown"
+              aria-expanded="true"
+              aria-labelledby="dropdownMenuMobiles"
+              style="cursor: pointer"
+            >
+              Home and Kitchen
+            </h6>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="carouselExampleAutoplaying"
+      class="carousel slide mb-2"
+      data-bs-ride="carousel"
+      data-bs-interval="3000"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="./images/Sale.jpg"
+            class="d-block w-100"
+            alt="Image"
+            style="height: 500px; object-fit: cover"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./images/sale2.jpg"
+            class="d-block w-100"
+            alt="Image"
+            style="height: 500px; object-fit: cover"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./images/sale3.jpg"
+            class="d-block w-100"
+            alt="Image"
+            style="height: 500px; object-fit: cover"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="container-fluid ">
+      <div class="row ms-5 mb-3">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3">
+          <div class="card border-dark" style="width: 18rem">
+            <img
+              src="./images/samsungs23.jpg"
+              alt="Image"
+              style="height: 200px"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Samsung Galaxy S23</h4>
+              <p class="card-text">
+                Sleek design, powerful performance, and pro-grade camera for the ultimate smartphone experience.
+              </p>
+              <h5 class="card-text">$699</h5>
+              <hr />
+              <div class="row">
+                <div class="col-6">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="col-6">
+                  <button class="btn btn-primary btn-sm">
+                    <i class="fa-solid fa-cart-shopping"></i>Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3">
+          <div class="card border-dark" style="width: 18rem">
+            <img
+              src="./images/samsungs23.jpg"
+              alt="Image"
+              style="height: 200px"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Samsung Galaxy S23</h4>
+              <p class="card-text">
+                Sleek design, powerful performance, and pro-grade camera for the ultimate smartphone experience.
+              </p>
+              <h5 class="card-text">$699</h5>
+              <hr />
+              <div class="row">
+                <div class="col-6">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="col-6">
+                  <button class="btn btn-primary btn-sm">
+                    <i class="fa-solid fa-cart-shopping"></i>Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3">
+          <div class="card border-dark" style="width: 18rem">
+            <img
+              src="./images/samsungs23.jpg"
+              alt="Image"
+              style="height: 200px"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Samsung Galaxy S23</h4>
+              <p class="card-text">
+                Sleek design, powerful performance, and pro-grade camera for the ultimate smartphone experience.
+              </p>
+              <h5 class="card-text">$699</h5>
+              <hr />
+              <div class="row">
+                <div class="col-6">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="col-6">
+                  <button class="btn btn-primary btn-sm">
+                    <i class="fa-solid fa-cart-shopping"></i>Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3">
+          <div class="card border-dark" style="width: 18rem">
+            <img
+              src="./images/samsungs23.jpg"
+              alt="Image"
+              style="height: 200px"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Samsung Galaxy S23</h4>
+              <p class="card-text">
+                Sleek design, powerful performance, and pro-grade camera for the ultimate smartphone experience.
+              </p>
+              <h5 class="card-text">$699</h5>
+              <hr />
+              <div class="row">
+                <div class="col-6">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="col-6">
+                  <button class="btn btn-primary btn-sm">
+                    <i class="fa-solid fa-cart-shopping"></i>Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row ms-5 mb-3">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3">
+          <div class="card border-dark" style="width: 18rem">
+            <img
+              src="./images/samsungs23.jpg"
+              alt="Image"
+              style="height: 200px"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Samsung Galaxy S23</h4>
+              <p class="card-text">
+                Sleek design, powerful performance, and pro-grade camera for the ultimate smartphone experience.
+              </p>
+              <h5 class="card-text">$699</h5>
+              <hr />
+              <div class="row">
+                <div class="col-6">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="col-6">
+                  <button class="btn btn-primary btn-sm">
+                    <i class="fa-solid fa-cart-shopping"></i>Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3">
+          <div class="card border-dark" style="width: 18rem">
+            <img
+              src="./images/samsungs23.jpg"
+              alt="Image"
+              style="height: 200px"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Samsung Galaxy S23</h4>
+              <p class="card-text">
+                Sleek design, powerful performance, and pro-grade camera for the ultimate smartphone experience.
+              </p>
+              <h5 class="card-text">$699</h5>
+              <hr />
+              <div class="row">
+                <div class="col-6">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="col-6">
+                  <button class="btn btn-primary btn-sm">
+                    <i class="fa-solid fa-cart-shopping"></i>Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3">
+          <div class="card border-dark" style="width: 18rem">
+            <img
+              src="./images/samsungs23.jpg"
+              alt="Image"
+              style="height: 200px"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Samsung Galaxy S23</h4>
+              <p class="card-text">
+                Sleek design, powerful performance, and pro-grade camera for the ultimate smartphone experience.
+              </p>
+              <h5 class="card-text">$699</h5>
+              <hr />
+              <div class="row">
+                <div class="col-6">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="col-6">
+                  <button class="btn btn-primary btn-sm">
+                    <i class="fa-solid fa-cart-shopping"></i>Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3">
+          <div class="card border-dark" style="width: 18rem">
+            <img
+              src="./images/samsungs23.jpg"
+              alt="Image"
+              style="height: 200px"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Samsung Galaxy S23</h4>
+              <p class="card-text">
+                Sleek design, powerful performance, and pro-grade camera for the ultimate smartphone experience.
+              </p>
+              <h5 class="card-text">$699</h5>
+              <hr />
+              <div class="row">
+                <div class="col-6">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="col-6">
+                  <button class="btn btn-primary btn-sm">
+                    <i class="fa-solid fa-cart-shopping"></i>Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid footer px-4 py-5">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-3 ">
+            <ul class="list-unstyled">
+              <li class="mb-3">About</li>
+              <li><a href="#" class="text-decoration-none text-dark fw-semibold">Contact Us</a></li>
+              <li><a href="#" class="text-decoration-none text-dark fw-semibold">About Us</a></li>
+              <li><a href="#" class="text-decoration-none text-dark fw-semibold">Careers</a></li>
+              <li><a href="#" class="text-decoration-none text-dark fw-semibold">Collaboration</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-3">
+            <ul class="list-unstyled">
+              <li class="mb-3">Partner Companies</li>
+              <li><a href="#" class="text-decoration-none text-dark fw-semibold">E-Shop</a></li>
+              <li><a href="#" class="text-decoration-none text-dark fw-semibold">Online Shop</a></li>
+              <li><a href="#" class="text-decoration-none text-dark fw-semibold">No Shop</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-3">
+            <ul class="list-unstyled">
+              <li class="mb-3">Help</li>
+              <li><a href="#" class="text-decoration-none text-dark fw-semibold">Payments</a></li>
+              <li><a href="#" class="text-decoration-none text-dark fw-semibold">Complaints</a></li>
+              <li><a href="#" class="text-decoration-none text-dark fw-semibold">FAQ</a></li>
+              <li><a href="#" class="text-decoration-none text-dark fw-semibold">Delivery</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-3">
+            <ul class="list-unstyled">
+              <li class="mb-3">Consumer Policy</li>
+              <li><a href="#" class="text-decoration-none text-dark fw-semibold">Refund Policy</a></li>
+              <li><a href="#" class="text-decoration-none text-dark fw-semibold">Return</a></li>
+              <li><a href="#" class="text-decoration-none text-dark fw-semibold">Shipping</a></li>
+              <li><a href="#" class="text-decoration-none text-dark fw-semibold">Cancellation</a></li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-3 border-start border-dark ">
+            <p>Company Address</p>
+            <p class="fw-semibold">Manjeri, Malappuram, Kerala, India</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-3">
+            <p>Mail Us</p>
+            <p><a href="#" class="text-decoration-none text-dark fw-semibold">naturegallery@gmail.com</a></p>
+          </div>
+        </div>
+    </div>
+  </body>
+</html>
